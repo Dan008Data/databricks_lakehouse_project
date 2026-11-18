@@ -1,4 +1,4 @@
-# End-to-End Azure Databricks Lakehouse Project
+# End-to-End Azure Databricks Lakehouse 
 
 ![Azure](https://img.shields.io/badge/Cloud-Microsoft%20Azure-0078D4)
 ![Databricks](https://img.shields.io/badge/Platform-Azure%20Databricks-EF3E42)
