@@ -1,6 +1,73 @@
 
 # End-to-End Azure Databricks Lakehouse Project
 
+
+# End-to-End Azure Databricks Lakehouse Project
+
+![Azure](https://img.shields.io/badge/Cloud-Microsoft%20Azure-0078D4)
+![Databricks](https://img.shields.io/badge/Platform-Azure%20Databricks-EF3E42)
+![ADLS Gen2](https://img.shields.io/badge/Storage-Azure%20Data%20Lake%20Gen2-0078D4)
+![PySpark](https://img.shields.io/badge/Processing-PySpark-E25A1C)
+![Apache Spark](https://img.shields.io/badge/Engine-Apache%20Spark-E25A1C)
+![Structured Streaming](https://img.shields.io/badge/Streaming-Spark%20Structured%20Streaming-E25A1C)
+![Auto Loader](https://img.shields.io/badge/Ingestion-Databricks%20Auto%20Loader-EF3E42)
+![Delta Lake](https://img.shields.io/badge/Storage-Delta%20Lake-00A972)
+![Unity Catalog](https://img.shields.io/badge/Governance-Unity%20Catalog-00A972)
+![Lakeflow Jobs](https://img.shields.io/badge/Orchestration-Lakeflow%20Jobs-EF3E42)
+![Lakeflow SDP](https://img.shields.io/badge/Pipelines-Lakeflow%20SDP-EF3E42)
+![AUTO CDC](https://img.shields.io/badge/CDC-AUTO%20CDC-8A2BE2)
+![Databricks SQL](https://img.shields.io/badge/Analytics-Databricks%20SQL-FF3621)
+![Power BI](https://img.shields.io/badge/Reporting-Power%20BI-F2C811)
+![GitHub](https://img.shields.io/badge/Version%20Control-GitHub-181717)
+
+
+## Table of Contents
+
+- [1. Project Overview](#1-project-overview)
+- [2. Client Requirements](#2-client-requirements)
+  - [Data Ingestion and Storage](#data-ingestion-and-storage)
+  - [Data Transformation and Quality](#data-transformation-and-quality)
+  - [Data Modelling and Historical Tracking](#data-modelling-and-historical-tracking)
+  - [Pipeline Orchestration](#pipeline-orchestration)
+  - [Governance and Analytics](#governance-and-analytics)
+- [3. Final Deliverables](#3-final-deliverables)
+- [4. Solution Architecture](#4-solution-architecture)
+  - [Architecture Flow](#architecture-flow)
+- [5. Technology Stack](#5-technology-stack)
+- [6. Azure Infrastructure and Unity Catalog Configuration](#6-azure-infrastructure-and-unity-catalog-configuration)
+  - [Azure Resources](#azure-resources)
+  - [Unity Catalog Configuration](#unity-catalog-configuration)
+- [7. Source Datasets](#7-source-datasets)
+- [8. Bronze Layer – Incremental Data Ingestion](#8-bronze-layer--incremental-data-ingestion)
+  - [Dynamic and Parameter-Driven Ingestion](#dynamic-and-parameter-driven-ingestion)
+  - [Auto Loader and Structured Streaming](#auto-loader-and-structured-streaming)
+  - [Bronze Ingestion Job Pipeline](#bronze-ingestion-job-pipeline)
+- [9. Silver Layer – Data Cleansing and Enrichment](#9-silver-layer--data-cleansing-and-enrichment)
+  - [9.1 Silver Customers](#91-silver-customers)
+  - [9.2 Silver Products](#92-silver-products)
+  - [9.3 Silver Orders](#93-silver-orders)
+  - [9.4 Silver Regions](#94-silver-regions)
+  - [Silver Layer Output](#silver-layer-output)
+- [10. Gold Layer – Dimensional Modelling](#10-gold-layer--dimensional-modelling)
+  - [10.1 Customer Dimension – SCD Type 1](#101-customer-dimension--scd-type-1)
+  - [10.2 Product Dimension – SCD Type 2](#102-product-dimension--scd-type-2)
+  - [10.3 Order Fact Table – Star Schema](#103-order-fact-table--star-schema)
+- [11. End-to-End Pipeline Orchestration](#11-end-to-end-pipeline-orchestration)
+  - [Workflow Execution](#workflow-execution)
+  - [Orchestration Design](#orchestration-design)
+- [12. Databricks SQL Warehouse and Analytics](#12-databricks-sql-warehouse-and-analytics)
+- [13. Data Governance and Security](#13-data-governance-and-security)
+- [14. Key Engineering Concepts Demonstrated](#14-key-engineering-concepts-demonstrated)
+- [15. Deployment and Execution Notes](#15-deployment-and-execution-notes)
+  - [Execution Sequence](#execution-sequence)
+- [16. Conclusion](#16-conclusion)
+
+---
+
+
+---
+
+
 ## 1. Project Overview
 
 This project demonstrates the design and implementation of an end-to-end **Lakehouse Data Engineering Solution** for a product-based business using Azure Databricks, Azure Data Lake Storage Gen2, Delta Lake, and the Medallion Architecture.
