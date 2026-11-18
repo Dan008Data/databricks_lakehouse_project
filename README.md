@@ -75,6 +75,9 @@ The solution follows the Medallion Architecture, with each layer serving a speci
 
 ![End-to-End Azure Databricks Lakehouse Architecture](images/end-to-end-pipeline.png)
 
+<img width="1665" height="836" alt="Screenshot 2026-11-18 115933" src="https://github.com/user-attachments/assets/6c7d847a-5cf2-45c2-977b-0318d16bda96" />
+
+
 ### Architecture Flow
 
 **Data Sources → Bronze → Silver → Gold → Databricks SQL Warehouse → Power BI**
