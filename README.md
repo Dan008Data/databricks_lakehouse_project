@@ -73,7 +73,6 @@ The completed project provides the following deliverables:
 
 The solution follows the Medallion Architecture, with each layer serving a specific purpose in the data engineering workflow.
 
-![End-to-End Azure Databricks Lakehouse Architecture](images/end-to-end-pipeline.png)
 
 <img width="1665" height="836" alt="Screenshot 2026-11-18 115933" src="https://github.com/user-attachments/assets/6c7d847a-5cf2-45c2-977b-0318d16bda96" />
 
@@ -198,9 +197,10 @@ This approach avoids maintaining a continuously running stream while still suppo
 
 The Bronze ingestion workflow uses a For Each task to execute the reusable ingestion notebook for each configured dataset.
 
-![Bronze Layer Ingestion Job Pipeline – Overview](images/bronze-ingestion-job-1.png)
+<img width="1515" height="899" alt="Screenshot 2026-11-18 091255" src="https://github.com/user-attachments/assets/532a5370-7e29-4c25-bbed-590bf23f8eac" />
 
-![Bronze Layer Ingestion Job Pipeline – Task Configuration](images/bronze-ingestion-job-2.png)
+<img width="1579" height="905" alt="Screenshot 2026-11-18 091318" src="https://github.com/user-attachments/assets/ce37206d-9a97-4363-bdb1-2bc34e07ad91" />
+
 
 The resulting Bronze datasets serve as the raw data foundation for the Silver Layer.
 
