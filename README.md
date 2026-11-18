@@ -550,51 +550,7 @@ This project demonstrates practical implementation of several important data eng
 
 ---
 
-## 15. Suggested Repository Structure
-
-The repository is organized around the different components of the Lakehouse architecture.
-
-```text
-Azure-Databricks-Lakehouse-Project/
-│
-├── README.md
-│
-├── images/
-│   ├── end-to-end-pipeline.png
-│   ├── bronze-ingestion-job-1.png
-│   └── bronze-ingestion-job-2.png
-│
-├── notebooks/
-│   ├── bronze/
-│   │   ├── Parameters.py
-│   │   └── Bronze_AutoLoader_Iteration.py
-│   │
-│   ├── silver/
-│   │   ├── Silver_Customers.py
-│   │   ├── Silver_Products.py
-│   │   ├── Silver_Orders.py
-│   │   └── Silver_Regions.py
-│   │
-│   └── gold/
-│       ├── Gold_Customers.py
-│       └── Gold_Fact.py
-│
-├── pipelines/
-│   └── gold_products/
-│       └── Gold_Products.py
-│
-├── resources/
-│   └── job_and_pipeline_configuration/
-│
-└── data/
-    └── source_datasets/
-```
-
-*The structure above is a suggested organization. Adjust the filenames and folders to match the actual files committed to the repository.*
-
----
-
-## 16. Deployment and Execution Notes
+## 15. Deployment and Execution Notes
 
 To reproduce this project, the following components are required:
 
@@ -621,7 +577,7 @@ To reproduce this project, the following components are required:
 
 ---
 
-## 17. Conclusion
+## 16. Conclusion
 
 This project demonstrates the implementation of a complete Azure Databricks Lakehouse solution, from raw Parquet ingestion to analytics-ready dimensional models.
 
